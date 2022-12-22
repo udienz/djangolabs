@@ -1,8 +1,9 @@
-from django.db import models
-from django.utils.translation import gettext as _
-from app.utilities.models import UUIDModel
-from django.templatetags.static import static
 from django.contrib.auth import get_user_model
+from django.db import models
+from django.templatetags.static import static
+from django.utils.translation import gettext as _
+
+from app.utilities.models import UUIDModel
 
 User = get_user_model()
 

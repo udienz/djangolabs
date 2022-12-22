@@ -1,7 +1,7 @@
 import environ
-from django.conf import settings
 import requests
 from app.device.models import Device
+from django.conf import settings
 
 # from .models import Device
 

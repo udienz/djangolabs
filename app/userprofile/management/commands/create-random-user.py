@@ -1,8 +1,9 @@
 import string
 
+from django.contrib.auth import get_user_model
 from django.core.management.base import BaseCommand
 from django.utils.crypto import get_random_string
-from django.contrib.auth import get_user_model
+
 User = get_user_model()
 
 
@@ -17,5 +18,3 @@ class Command(BaseCommand):
             password = get_random_string(50)
             User.objects.create_user(username=username, email=email, password=password)
         return '{} raaandom users created succesfully'.format(total)
-
-
